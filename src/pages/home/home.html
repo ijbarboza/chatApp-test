@@ -1,0 +1,65 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+    	Chat App
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+<!--   <ion-item>
+    <ion-label floating>Name</ion-label>
+    <ion-input type="text" [(ngModel)]="user"></ion-input>
+    <ion-label floating>Pasword</ion-label>
+    <ion-input type="text" [(ngModel)]="pasword"></ion-input>
+  </ion-item>
+
+  <button ion-button block outline>Enter Chat</button>
+</ion-content>
+ -->
+ <br/>
+    <br/>
+  
+  <img style="display: block; margin: 0 auto;" src="https://firebasestorage.googleapis.com/v0/b/ionic-chat-interview.appspot.com/o/download.png?alt=media&token=743104ea-2b26-45b0-b3ed-26f7d73c1b52"/>
+
+  <br/>
+  <br/>
+  
+  <div>
+      <ion-list>
+        <ion-item>
+          <ion-label stacked>Username</ion-label> 
+          <ion-input type="email" [(ngModel)]="username" name="username"  required="required"></ion-input>
+        </ion-item>
+  
+        <ion-item>
+          <ion-label stacked>Password</ion-label>
+          <ion-input type="password" [(ngModel)]="password" name="password" required="required"></ion-input>
+        </ion-item>
+  
+        <div padding text-center>
+         
+           <button *ngIf="username && password" ion-button color="danger" round (click)="submitLogin()">
+            Login</button>
+          <!-- Show dead button if form is not filled -->
+          <button *ngIf="!username && !password" ion-button color="danger" clear round>Login Now</button>
+          
+          
+        </div>
+       
+        
+  
+      </ion-list>
+      </div>
+    
+     <br/>
+    <!--  <div padding text-center>
+        <button ion-button color="gray" block clear (click)="forgotPassword()">Forgot Password</button>
+      </div>
+   
+      
+        <div padding text-center>
+          <button ion-button color="gray" block clear (click)="redirectToSignup()">Create new account</button>
+        </div> -->
+
+</ion-content>
